@@ -3,15 +3,19 @@
 
 ### Data 
 
-$ irb
+Within terminal:
 
-	> require './app/models/Car.rb'
+	$ irb
 
-	> mycar = Car.new("Porsche", "918 Spyder")
+		> require './app/models/Car.rb'
 
-	> mycar.getStats
+		> mycar = Car.new("Porsche", "918 Spyder")
 
-	> mycar.printStats
+		> mycar.printStats
+
+		> mycar.getStats
+
+		> mycar.printStats
 
 
 ### 918 Spyder info
