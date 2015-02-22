@@ -1,4 +1,6 @@
 class Car #< ActiveRecord::Base
+
+	# SEE README FOR INPUT DATA
 	
 
 	def initialize(make, model)
