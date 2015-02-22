@@ -24,11 +24,11 @@ class Car #< ActiveRecord::Base
 
 
 	def convertPower(power_kw)
-		(power_kw/1.34102209).to_int
+		(power_kw*1.34102209).to_i
 	end
 
 	def convertTorque(torque_nm)
-		(torque_nm*1.3558179488410815).to_int
+		(torque_nm/1.3558179488410815).to_i
 	end
 
 
