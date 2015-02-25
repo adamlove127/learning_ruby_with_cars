@@ -1,7 +1,10 @@
-class Car #< ActiveRecord::Base
+class car #< ActiveRecord::Base
 
 	# SEE README FOR INPUT DATA
-	
+	#VIRTUAL ATTRIBUTES
+	# Seating capacity
+	# transmission
+	# vehicle type 
 
 	def initialize(make, model)
 		@make = make
@@ -9,7 +12,7 @@ class Car #< ActiveRecord::Base
 	end
 
 
-	def getStats()
+	def get_stats
 		print "How many kW of power does your car make? "
 		@power_kw = gets.chomp.to_i
 		print "How many Nm of torque does your car make? "
@@ -23,16 +26,16 @@ class Car #< ActiveRecord::Base
 	end
 
 
-	def convertPower(power_kw)
+	def convert_power(power_kw)
 		(power_kw*1.34102209).to_i
 	end
 
-	def convertTorque(torque_nm)
+	def convert_torque(torque_nm)
 		(torque_nm/1.3558179488410815).to_i
 	end
 
 
-	def printStats
+	def print_stats
 		if !@power_kw
 			puts "You drive a #{@make} #{@model} ? That's cool, I guess."
 		else
